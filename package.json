@@ -12,6 +12,7 @@
     "@types/proj4": "^2.3.4",
     "axios": "^0.17.1",
     "bluebird": "^3.5.1",
+    "fs-extra": "^7.0.1",
     "lodash": "^4.17.4",
     "proj4": "^2.4.4",
     "typescript": "^2.6.2"

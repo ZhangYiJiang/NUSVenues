@@ -1,4 +1,4 @@
-import * as fs from "fs";
+import * as fs from "fs-extra";
 import * as _ from "lodash";
 import * as bluebird from "bluebird";
 import * as proj4 from "proj4";
@@ -127,10 +127,10 @@ function cleanedData(
 async function work() {
   const venuesToMatch = SHOULD_REMATCH
     ? venues
-    : JSON.parse(fs.readFileSync(UNMATCHED_FILEPATH, "utf-8"));
+    : fs.readJSONSync(UNMATCHED_FILEPATH);
   const existingMatchedVenues = SHOULD_REMATCH
     ? []
-    : JSON.parse(fs.readFileSync(MATCHED_FILEPATH, "utf-8"));
+    : fs.readJSONSync(MATCHED_FILEPATH);
 
   venuesToMatch.sort();
   existingMatchedVenues.sort();
@@ -149,21 +149,24 @@ async function work() {
 
   console.log(`Found ${matchedVenues.length} of ${venues.length} venues`);
 
-  fs.writeFile(
-    MATCHED_FILEPATH,
-    JSON.stringify(matchedVenues, null, "\t"),
-    err => err && console.log(err)
-  );
-  fs.writeFile(
-    UNMATCHED_FILEPATH,
-    JSON.stringify(unmatchedVenues, null, "\t"),
-    err => err && console.log(err)
-  );
-  fs.writeFile(
-    FINAL_FILEPATH,
-    JSON.stringify(cleanedData(matchedVenues, unmatchedVenues), null, "\t"),
-    err => err && console.log(err)
-  );
+  await Promise.all([
+    fs.outputJSON(
+      MATCHED_FILEPATH,
+      matchedVenues,
+      {spaces: 2}
+    ),
+    fs.outputJSON(
+      UNMATCHED_FILEPATH,
+      unmatchedVenues,
+      {spaces: 2}
+    ),
+    fs.outputJSON(
+      FINAL_FILEPATH,
+      cleanedData,
+      {spaces: 2}
+    ),
+  ])
+
 }
 
 work();
