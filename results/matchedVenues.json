@@ -1,56 +1,5 @@
 [
 	{
-		"venue": "E1-06-10",
-		"poiData": {
-			"address": "E1-06-10",
-			"location": {
-				"x": 21077.951899999753,
-				"y": 31252.835000000894,
-				"z": 25
-			},
-			"score": 100,
-			"attributes": {
-				"ResultID": 36,
-				"Loc_name": "POI_CODE",
-				"Status": "M",
-				"Score": 100,
-				"Match_addr": "E1-06-10",
-				"Xmin": 0,
-				"Xmax": 0,
-				"Ymin": 0,
-				"Ymax": 0,
-				"Addr_type": "Address"
-			}
-		},
-		"networkData": {
-			"layerId": 8,
-			"layerName": "NUS_POI",
-			"displayFieldName": "NAME",
-			"foundFieldName": "CODE",
-			"value": "E1-06-10",
-			"attributes": {
-				"OBJECTID": "6802",
-				"SHAPE": "Point",
-				"NAME": "TUTORIAL ROOM",
-				"CODE": "E1-06-10",
-				"CATEGORY": "ROOM",
-				"SHAPE_Leng": "Null",
-				"ORIG_FID": "90",
-				"FLOOR": "6"
-			},
-			"geometryType": "esriGeometryPoint",
-			"geometry": {
-				"x": 21077.951899999753,
-				"y": 31252.8348999992,
-				"z": 25,
-				"spatialReference": {
-					"wkid": 3414,
-					"latestWkid": 3414
-				}
-			}
-		}
-	},
-	{
 		"venue": "AS1-0203",
 		"poiData": {
 			"address": "AS1-02-03",
@@ -93,6 +42,57 @@
 			"geometry": {
 				"x": 21219.78010000009,
 				"y": 30874.02950000018,
+				"z": 10,
+				"spatialReference": {
+					"wkid": 3414,
+					"latestWkid": 3414
+				}
+			}
+		}
+	},
+	{
+		"venue": "AS1-0204",
+		"poiData": {
+			"address": "AS1-02-04",
+			"location": {
+				"x": 21217.29879999999,
+				"y": 30867.161100000143,
+				"z": 10
+			},
+			"score": 72,
+			"attributes": {
+				"ResultID": 8,
+				"Loc_name": "POI_CODE",
+				"Status": "M",
+				"Score": 72,
+				"Match_addr": "AS1-02-04",
+				"Xmin": 0,
+				"Xmax": 0,
+				"Ymin": 0,
+				"Ymax": 0,
+				"Addr_type": "Address"
+			}
+		},
+		"networkData": {
+			"layerId": 8,
+			"layerName": "NUS_POI",
+			"displayFieldName": "NAME",
+			"foundFieldName": "CODE",
+			"value": "AS1-02-04",
+			"attributes": {
+				"OBJECTID": "6149",
+				"SHAPE": "Point",
+				"NAME": "SEMINAR ROOM",
+				"CODE": "AS1-02-04",
+				"CATEGORY": "ROOM",
+				"SHAPE_Leng": "Null",
+				"ORIG_FID": "26",
+				"FLOOR": "2"
+			},
+			"geometryType": "esriGeometryPoint",
+			"geometry": {
+				"x": 21217.29879999999,
+				"y": 30867.161100000143,
 				"z": 10,
 				"spatialReference": {
 					"wkid": 3414,
@@ -7701,21 +7701,21 @@
 		}
 	},
 	{
-		"venue": "AS1-0204",
+		"venue": "E1-06-10",
 		"poiData": {
-			"address": "AS1-02-04",
+			"address": "E1-06-10",
 			"location": {
-				"x": 21217.29879999999,
-				"y": 30867.161100000143,
-				"z": 10
+				"x": 21077.951899999753,
+				"y": 31252.835000000894,
+				"z": 25
 			},
-			"score": 72,
+			"score": 100,
 			"attributes": {
-				"ResultID": 8,
+				"ResultID": 36,
 				"Loc_name": "POI_CODE",
 				"Status": "M",
-				"Score": 72,
-				"Match_addr": "AS1-02-04",
+				"Score": 100,
+				"Match_addr": "E1-06-10",
 				"Xmin": 0,
 				"Xmax": 0,
 				"Ymin": 0,
@@ -7728,22 +7728,22 @@
 			"layerName": "NUS_POI",
 			"displayFieldName": "NAME",
 			"foundFieldName": "CODE",
-			"value": "AS1-02-04",
+			"value": "E1-06-10",
 			"attributes": {
-				"OBJECTID": "6149",
+				"OBJECTID": "6802",
 				"SHAPE": "Point",
-				"NAME": "SEMINAR ROOM",
-				"CODE": "AS1-02-04",
+				"NAME": "TUTORIAL ROOM",
+				"CODE": "E1-06-10",
 				"CATEGORY": "ROOM",
 				"SHAPE_Leng": "Null",
-				"ORIG_FID": "26",
-				"FLOOR": "2"
+				"ORIG_FID": "90",
+				"FLOOR": "6"
 			},
 			"geometryType": "esriGeometryPoint",
 			"geometry": {
-				"x": 21217.29879999999,
-				"y": 30867.161100000143,
-				"z": 10,
+				"x": 21077.951899999753,
+				"y": 31252.8348999992,
+				"z": 25,
 				"spatialReference": {
 					"wkid": 3414,
 					"latestWkid": 3414
