@@ -66,7 +66,7 @@ async function matchPoI() {
   const newVenuesCleaned = _.mapValues(newVenues, (poi: PlaceOfInterest, venue: string) => cleanData(venue, poi));
   console.log(JSON.stringify(newVenuesCleaned, null, 2));
 
-  await fs.outputJSON('results/matchedPOI.json', newVenuesCleaned, { spaces: 2 })
+  await fs.outputJSON('results/matchedPOI.json', _.values(newVenuesCleaned), { spaces: 2 })
 }
 
 const proj = proj4("EPSG:3414", "EPSG:4326");
