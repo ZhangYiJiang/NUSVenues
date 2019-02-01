@@ -20,6 +20,23 @@ type PoiData = {
   };
 };
 
+export type PlaceOfInterest = {
+  attributes: {
+    OBJECTID: number;
+    NAME: string;
+    CODE: string;
+    CATEGORY: string;
+    SHAPE_Leng?: any;
+    ORIG_FID?: number;
+    FLOOR?: number;
+  },
+  geometry: {
+    x: number,
+    y: number,
+    z: number,
+  }
+}
+
 export type NetworkData = {
   layerId: number;
   layerName: string;

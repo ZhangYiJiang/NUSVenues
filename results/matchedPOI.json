@@ -1,0 +1,282 @@
+{
+  "EW1-01-01": {
+    "corsRoomCode": "EW1-01-01",
+    "details": {
+      "nusRoomCode": "EW1-01-01",
+      "roomName": "CONCRETE TECHNOLOGY LAB",
+      "floor": 1,
+      "location": {
+        "epsg3414": {
+          "x": 1.8111386337903261,
+          "y": 0.022668815208853513,
+          "z": 0
+        },
+        "wgs84": {
+          "x": 103.77059982927568,
+          "y": 1.2988274380292781,
+          "z": 0
+        }
+      }
+    }
+  },
+  "EW1-03-02": {
+    "corsRoomCode": "EW1-03-02",
+    "details": {
+      "nusRoomCode": "EW1-03-02",
+      "roomName": "GEOTECHNICAL ENGINEERING LAB",
+      "floor": 3,
+      "location": {
+        "epsg3414": {
+          "x": 1.8111430431961686,
+          "y": 0.022664127430924476,
+          "z": 15
+        },
+        "wgs84": {
+          "x": 103.7708524696206,
+          "y": 1.2985588481386496,
+          "z": 15
+        }
+      }
+    }
+  },
+  "MD9-01-02": {
+    "corsRoomCode": "MD9-01-02",
+    "details": {
+      "nusRoomCode": "MD9-01-02",
+      "roomName": "PHYSIOLOGY LAB",
+      "floor": 1,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113261813482324,
+          "y": 0.022631618238221275,
+          "z": 0
+        },
+        "wgs84": {
+          "x": 103.78134551280169,
+          "y": 1.2966962086013787,
+          "z": 0
+        }
+      }
+    }
+  },
+  "MD10-02-01": {
+    "corsRoomCode": "MD10-02-01",
+    "details": {
+      "nusRoomCode": "MD10-02-01",
+      "roomName": "ANATOMY TEACHING MUSEUM",
+      "floor": 2,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113327898161649,
+          "y": 0.02262844697805084,
+          "z": 5
+        },
+        "wgs84": {
+          "x": 103.78172415012327,
+          "y": 1.296514508777875,
+          "z": 5
+        }
+      }
+    }
+  },
+  "E1-02-03": {
+    "corsRoomCode": "E1-02-03",
+    "details": {
+      "nusRoomCode": "E1-02-03",
+      "roomName": "DYNAMICS LAB 2",
+      "floor": 2,
+      "location": {
+        "epsg3414": {
+          "x": 1.8111461483582618,
+          "y": 0.02266663355504176,
+          "z": 5
+        },
+        "wgs84": {
+          "x": 103.77103038230325,
+          "y": 1.298702438473506,
+          "z": 5
+        }
+      }
+    }
+  },
+  "E1-03-01": {
+    "corsRoomCode": "E1-03-01",
+    "details": {
+      "nusRoomCode": "E1-03-01",
+      "roomName": "ESP MULTIDISCIPLINARY LAB",
+      "floor": 3,
+      "location": {
+        "epsg3414": {
+          "x": 1.811147034215193,
+          "y": 0.022664848044172452,
+          "z": 10
+        },
+        "wgs84": {
+          "x": 103.77108113816666,
+          "y": 1.29860013623642,
+          "z": 10
+        }
+      }
+    }
+  },
+  "E3A-05-04": {
+    "corsRoomCode": "E3A-05-04",
+    "details": {
+      "nusRoomCode": "E3A-05-04",
+      "roomName": "HEAT TREATMENT",
+      "floor": 5,
+      "location": {
+        "epsg3414": {
+          "x": 1.811149364439853,
+          "y": 0.022696886058698098,
+          "z": 0
+        },
+        "wgs84": {
+          "x": 103.77121465020501,
+          "y": 1.3004357792527184,
+          "z": 0
+        }
+      }
+    }
+  },
+  "E4-07-08": {
+    "corsRoomCode": "E4-07-08",
+    "details": {
+      "nusRoomCode": "E4-07-08",
+      "roomName": "STAFF ROOM1",
+      "floor": 7,
+      "location": {
+        "epsg3414": {
+          "x": 1.8111595391959818,
+          "y": 0.022665628656769805,
+          "z": 35
+        },
+        "wgs84": {
+          "x": 103.77179762078876,
+          "y": 1.298644862043683,
+          "z": 35
+        }
+      }
+    }
+  },
+  "MD1-05-03K": {
+    "corsRoomCode": "MD1-05-03K",
+    "details": {
+      "nusRoomCode": "MD1-05-03K",
+      "roomName": "SEMINAR ROOM 4",
+      "floor": 5,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113110775023684,
+          "y": 0.02260691017697074,
+          "z": 20
+        },
+        "wgs84": {
+          "x": 103.78048012617927,
+          "y": 1.2952805409717725,
+          "z": 20
+        }
+      }
+    }
+  },
+  "MD1-08-01A": {
+    "corsRoomCode": "MD1-08-01A",
+    "details": {
+      "nusRoomCode": "MD1-08-01A",
+      "roomName": "COMPUTER LAB 1",
+      "floor": 8,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113124567870258,
+          "y": 0.0226104169361104,
+          "z": 35
+        },
+        "wgs84": {
+          "x": 103.78055915336888,
+          "y": 1.2954814634702438,
+          "z": 35
+        }
+      }
+    }
+  },
+  "MD1-10-01A": {
+    "corsRoomCode": "MD1-10-01A",
+    "details": {
+      "nusRoomCode": "MD1-10-01A",
+      "roomName": "CONFERENCE ROOM 2",
+      "floor": 10,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113098987587666,
+          "y": 0.022612074248400008,
+          "z": 45
+        },
+        "wgs84": {
+          "x": 103.78041258914575,
+          "y": 1.2955764204697735,
+          "z": 45
+        }
+      }
+    }
+  },
+  "BIZ2-0422": {
+    "corsRoomCode": "BIZ2-0422",
+    "details": {
+      "nusRoomCode": "BIZ2-04-22",
+      "roomName": "SEMINAR ROOM 4-22",
+      "floor": 4,
+      "location": {
+        "epsg3414": {
+          "x": 1.8112130617671094,
+          "y": 0.022574109854726587,
+          "z": 15
+        },
+        "wgs84": {
+          "x": 103.77486423822306,
+          "y": 1.2934012209405132,
+          "z": 15
+        }
+      }
+    }
+  },
+  "AS4-0519": {
+    "corsRoomCode": "AS4-0519",
+    "details": {
+      "nusRoomCode": "AS4-05-19",
+      "roomName": "DEPT MEETING ROOM",
+      "floor": 5,
+      "location": {
+        "epsg3414": {
+          "x": 1.8111656835074141,
+          "y": 0.0225964942648087,
+          "z": 20
+        },
+        "wgs84": {
+          "x": 103.77214966390184,
+          "y": 1.2946837531651085,
+          "z": 20
+        }
+      }
+    }
+  },
+  "S16-0302": {
+    "corsRoomCode": "S16-0302",
+    "details": {
+      "nusRoomCode": "S16-03-02",
+      "roomName": "READING HALL",
+      "floor": 3,
+      "location": {
+        "epsg3414": {
+          "x": 1.8113136175790585,
+          "y": 0.022633066944782735,
+          "z": 10
+        },
+        "wgs84": {
+          "x": 103.78062566185325,
+          "y": 1.2967792133731033,
+          "z": 10
+        }
+      }
+    }
+  }
+}

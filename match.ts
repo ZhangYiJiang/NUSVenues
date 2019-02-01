@@ -69,40 +69,43 @@ async function getRoomNames(
   // venues.map(venue => {
   return bluebird.map(
     venues,
-    venue => {
+    async (venue) => {
       const roomCode = venue.poiData.address;
-      return axios
-        .get(NETWORK_FIND_URL, {
-          params: {
-            searchText: roomCode,
-            layers: 8, // POI layer
-            returnGeometry: true,
-            returnZ: true, // Ask for Z coords
-            f: "json"
-          }
-        })
-        .then(res => ({
+
+      try {
+        const { data } = await axios
+          .get(NETWORK_FIND_URL, {
+            params: {
+              searchText: roomCode,
+              layers: 8, // POI layer
+              returnGeometry: true,
+              returnZ: true, // Ask for Z coords
+              f: "json"
+            }
+          });
+
+        return {
           ...venue,
-          networkData: res.data.results[0] as NetworkData
-        }))
-        .catch(err => {
-          console.log(`Kena error for ${roomCode} ${err.message}`);
-          return venue;
-        });
+          networkData: data.results[0] as NetworkData
+        }
+      } catch (e) {
+        console.log(`Kena error for ${roomCode} ${e.message}`);
+        return venue;
+      }
     },
     { concurrency: 10 }
   );
 }
 
+const proj = proj4("EPSG:3414", "EPSG:4326");
+// Convenience function to calculate WGS84 coords from EPSG:3414 coords
+const wgs84Coords = (location: { x: number; y: number; z: number }) =>
+  proj.forward(location);
+
 function cleanedData(
   matchedVenues: CompleteVenue[],
   unmatchedVenues: string[]
 ): Venue[] {
-  const proj = proj4("EPSG:3414", "EPSG:4326");
-  // Convenience function to calculate WGS84 coords from EPSG:3414 coords
-  const wgs84Coords = (location: { x: number; y: number; z: number }) =>
-    proj.forward(location);
-
   return [
     ...matchedVenues.map(v => ({
       corsRoomCode: v.venue,
@@ -150,21 +153,9 @@ async function work() {
   console.log(`Found ${matchedVenues.length} of ${venues.length} venues`);
 
   await Promise.all([
-    fs.outputJSON(
-      MATCHED_FILEPATH,
-      matchedVenues,
-      {spaces: 2}
-    ),
-    fs.outputJSON(
-      UNMATCHED_FILEPATH,
-      unmatchedVenues,
-      {spaces: 2}
-    ),
-    fs.outputJSON(
-      FINAL_FILEPATH,
-      cleanedData,
-      {spaces: 2}
-    ),
+    fs.outputJSON(MATCHED_FILEPATH, matchedVenues, { spaces: 2 }),
+    fs.outputJSON(UNMATCHED_FILEPATH, unmatchedVenues, { spaces: 2 }),
+    fs.outputJSON(FINAL_FILEPATH, cleanedData, { spaces: 2 }),
   ])
 
 }
